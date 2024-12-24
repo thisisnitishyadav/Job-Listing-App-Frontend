@@ -16,8 +16,8 @@ export default function HomePage() {
   const fetchJobs = async (location = '') => {
     try {
       const url = location 
-        ? `${process.env.NEXT_PUBLIC_APP_URL}/api/jobs/search?location=${location}`
-        : `${process.env.NEXT_PUBLIC_APP_URL}/api/jobs`;
+        ? `https://job-listing-backend-production-4bbf.up.railway.app/api/jobs/search?location=${location}`
+        : `https://job-listing-backend-production-4bbf.up.railway.app/api/jobs`;
   
       console.log('Fetching from:', url); // Debug the constructed URL
   
